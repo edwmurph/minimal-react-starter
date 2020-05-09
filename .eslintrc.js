@@ -1,5 +1,11 @@
 module.exports = {
   root: true,
+  parserOptions: {
+    ecmaVersion: 2019,
+    ecmaFeatures: {
+      impliedStrict: true
+    },
+  },
   env: {
     node: true,
     es6: true,
