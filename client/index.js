@@ -11,12 +11,18 @@ const App = () => {
   }
 
   if (error) {
-    return (<p className='text-danger'>Error: {error}</p>);
+    return (<p className='text-danger'>
+      Error:
+      {error}
+    </p>);
   }
 
   return (
-    <p className='text-primary'>Data: {data}</p>
+    <p className='text-primary'>
+      Data:
+      {data}
+    </p>
   );
 };
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App/>, document.getElementById('app'));
