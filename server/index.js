@@ -14,8 +14,8 @@ const main = () => {
         origin: '*',
         methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
         preflightContinue: false,
-        optionsSuccessStatus: 204,
-      }),
+        optionsSuccessStatus: 204
+      })
     );
 
     server.use( express.static(path.join(__dirname, '..', 'dist') ) );
