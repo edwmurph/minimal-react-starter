@@ -6,15 +6,15 @@ import useAPI from './hooks/use-api';
 const App = () => {
   const { data, loading, error } = useAPI({ route: '/api/hello' });
 
-  if (loading) {
+  if ( loading ) {
     return <p>Loading...</p>;
   }
 
-  if (error) {
-    return (<p className='text-danger'>
+  if ( error ) {
+    return ( <p className='text-danger'>
       Error:
       {error}
-    </p>);
+    </p> );
   }
 
   return (
@@ -25,4 +25,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App/>, document.getElementById('app'));
+ReactDOM.render( <App/>, document.getElementById('app') );

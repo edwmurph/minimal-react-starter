@@ -1,7 +1,7 @@
 const path = require('path');
-const express = require( 'express' );
+const express = require('express');
 const cors = require('cors');
-const routes = require( './routes' );
+const routes = require('./routes');
 
 const port = 3000;
 
@@ -18,11 +18,11 @@ const main = () => {
       })
     );
 
-    server.use( express.static(path.join(__dirname, '..', 'dist') ) );
+    server.use( express.static( path.join( __dirname, '..', 'dist' ) ) );
 
     server.use( routes.helloWorld );
 
-    server.listen( port, () => console.log( `server listening on port ${port}!` ) );
+    server.listen( port, () => console.log( `server listening on port ${ port }!` ) );
   } catch ( ex ) {
     console.error( 'global exception:', ex );
   }
