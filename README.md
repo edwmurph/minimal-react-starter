@@ -21,3 +21,9 @@ npm run prod
 ```
 npm run lint
 ```
+
+### Running in docker
+```
+docker build -t starter-react-express .
+docker run --rm starter-react-express -p 3000:3000
+```
