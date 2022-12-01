@@ -1,4 +1,3 @@
 #!/bin/bash
 
-nodemon server/index.js &
-parcel client/index.html
+(trap 'kill 0' SIGINT; nodemon server/index.js & parcel watch client/index.html & wait)

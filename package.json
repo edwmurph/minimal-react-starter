@@ -5,7 +5,7 @@
     "start": "node server/index.js",
     "dev": "./scripts/dev.sh",
     "server": "nodemon server/index.js",
-    "clean": "rm -rf .cache && rm -rf dist",
+    "clean": "rm -rf .parcel-cache .cache dist",
     "prod": "npm run build && npm start",
     "build": "parcel build client/index.html",
     "lint": "eslint .",
@@ -13,21 +13,16 @@
   },
   "dependencies": {
     "axios": "0.26.0",
-    "babel-polyfill": "6.26.0",
-    "core-js": "3.21.1",
     "cors": "2.8.5",
-    "express": "4.17.3",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "express": "4.18.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "7.17.5",
-    "@babel/preset-env": "7.16.11",
-    "@babel/preset-react": "7.16.7",
-    "babel-plugin-transform-runtime": "6.23.0",
-    "@edwmurph/eslint-config": "4.0.0",
-    "nodemon": "2.0.15",
-    "parcel-bundler": "1.12.5"
+    "@edwmurph/eslint-config": "5.0.2",
+    "nodemon": "2.0.20",
+    "parcel": "2.8.0",
+    "process": "0.11.10"
   },
   "repository": {
     "type": "git",

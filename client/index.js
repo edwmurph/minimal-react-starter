@@ -1,5 +1,3 @@
-import 'babel-polyfill';
-import React from 'react';
 import ReactDOM from 'react-dom';
 import useAPI from './hooks/use-api';
 
@@ -7,6 +5,7 @@ const App = () => {
   const { data, loading, error } = useAPI({ route: '/api/hello' });
 
   if ( loading ) {
+    console.log( 'here', process.env.TEST );
     return <p>Loading...</p>;
   }
 
